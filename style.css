@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tlo{
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Tło na całą wysokość okna */
+    background-image: url('tlo_dobre.jpg'); /* Obrazek samochodów */
+    background-size: cover;            background-position: center;
+    background-attachment: fixed; /* Umożliwia efekt parallax */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    position: absolute;
+    top: 60%;  /* Przesunięcie w dół o 60% wysokości ekranu */
+    left: 10%;  /* Przesunięcie w lewo o 10% szerokości ekranu */
+    transform: translate(0, -50%);  /* Zostawiamy poziome wyśrodkowanie i przesuwamy tylko pionowo */
+    text-align: left;  /* Wyrównanie tekstu do lewej */
+    color:#FFD700;  /* Kolor tekstu */
+    z-index: 10;
+}
+
+.content h1 {
+    font-size: 3rem;  /* Duży rozmiar czcionki */
+    margin-bottom: 20px;  /* Odstęp od tekstu */
+}
+.guzik {
+    position: absolute;  /* Aby przesunąć przycisk niezależnie od kontenera */
+    top: 50%;  /* Wyrównanie przycisku do połowy w pionie */
+    right: -150%;  /* Przesunięcie przycisku na prawą stronę */
+    transform: translate(0, -50%);  /* Wyrównanie przycisku do środka w pionie */
+}
+.guzik .btn {
+    display: inline-block;
+    padding: 15px 30px;  /* Padding wokół tekstu */
+    background-color: #ff6600;  /* Kolor tła przycisku */
+    color: white;  /* Kolor tekstu w przycisku */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border: 3px solid #ff6600;  /* Obramowanie przycisku */
+    border-radius: 5px;  /* Zaokrąglone rogi */
+    transition: background-color 0.3s ease, color 0.3s ease;  /* Płynne zmiany kolorów */
+    margin-top: 10px;  /* Odstęp od poprzedniego elementu (np. <p>) */
+}
+
+.guzik .btn:hover {
+    background-color: #ff4400;  /* Zmiana koloru tła przycisku przy najechaniu */
+    color: white;  /* Zmiana koloru tekstu przy najechaniu */
+}
+.napis{
+    font-size: 3rem;  
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background: rgba(255, 0, 0, 0); 
+    border-radius: 10px; 
+}
+nav {
+    position: fixed;  /* Przypinamy nawigację na stałe na górze */
+    top: 0;            /* Na górze ekranu */
+    left: 0;
+    width: 100%;       /* Nawigacja rozciąga się na całą szerokość */
+    background-color: black; /* Ciemne tło */
+    padding: 20px 0;   /* Padding góra/dół */
+    display: flex;     /* Flexbox do ustawienia linków obok siebie */
+    justify-content: center; /* Wyrównanie linków do środka */
+    align-items: center; /* Wyśrodkowanie w pionie */
+    z-index: 1000;     /* Na wierzchu */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 20px; /* Padding wokół tekstu */
+    margin: 0 10px; /* Odstęp pomiędzy linkami */
+    transition: background-color 0.3s, color 0.3s; /* Płynna zmiana koloru i tła */
+}
+#login{
+    position: absolute; /* Pozycjonowanie absolutne względem strony */
+    top: 10px; /* Odstęp od górnej krawędzi */
+    right: 20px; /* Odstęp od prawej krawędzi */
+    font-size: 1rem;
+    color: white;
+    font-weight: normal;
+    padding: 10px 15px;
+    background-color: opacity; /* Tło przycisku */
+    border-radius: 5px;
+    z-index: 1001; /* Na wierzchu w stosunku do innych elementów */
+}
+#login:hover {
+    background-color: red; /* Zmiana tła przy najechaniu */
+}
+.logo {
+    position: absolute; 
+    top: 0px; 
+    left: 20px; 
+    width: 400px; 
+     height: auto;     
+}
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: rgb(168, 53, 7); 
+}
+.prostokaty {
+    width: 500px; /* Szerokość prostokąta */
+    height: 300px; /* Wysokość prostokąta */
+    background-color: #e5b908; /* Tło prostokąta */
+    color: white; /* Kolor tekstu */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 2%;
+    padding: 10px;
+    position: relative;
+    
+    
+}
+.ustawienie_prostokatow {
+    display: flex; /* Ustawienie elementów w jednym wierszu */
+    justify-content: space-evenly; /* Równomierne rozstawienie prostokątów */
+    width: 80%; /* Ustal szerokość kontenera */
+    margin-left: 10%;
+    padding: 2%;
+}
+.prostokaty h4 {
+    font-size: 1.2rem;
+    margin: 0; /* Brak marginesu wokół nagłówka */
+    position: absolute; /* Pozycjonowanie absolutne */
+    top: 10; /* Ustawienie na górze */
+    left: 50%; /* Wyśrodkowanie poziome */
+    transform: translateX(-50%); /* Przesunięcie w lewo o połowę szerokości */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    padding: 15px;
+}
+
+/* Tekst (p) */
+.prostokaty p {
+    font-size: 1rem;
+    text-align: center; /* Wyśrodkowanie tekstu */
+    margin-top: 150px; 
+    font-style:italic;
+}
+.tlo_prostokaty {
+    width: 100%;
+    background-color: #6c232317;  /* Szare tło */
+    height: 100vh; /* Wysokość 100% okna */
+    margin-top: -20px;
+}
+.ikona-container {
+    position: absolute; /* Pozycjonowanie absolutne */
+    top: 10%; /* Ustawienie na górze */
+    left: 50%; /* Wyśrodkowanie poziome */
+    transform: translateX(-50%); /* Przesunięcie w lewo o połowę szerokości */
+    text-align: center;
+}
+
+.ikona {
+    width: 60px; /* Szerokość ikony */
+    height: 60px; /* Wysokość ikony */
+    border-radius: 50%; /* Okrągły kształt */
+    background-color: #fff; /* Tło ikony, żeby wyróżniała się na tle */
+    object-fit: cover; /* Dopasowanie obrazu do kształtu */
+}
+#naglowek
+{
+    font-size:80px;
+    text-align: center;
+    padding: 4%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:600;
+
+}
+.dol{
+    background-color: black;
+}
+.dol footer{
+    font-size: medium;
+    color:white;
+    text-align: center;
+}
