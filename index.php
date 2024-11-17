@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wypozyczalnia Aut</title>
-    <link rel="icon" href="car.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <?php include 'header.php';?>
+        <title>Wypozyczalnia</title>
+        
 </head>
 <body>
     <div class="tlo">
@@ -17,26 +14,17 @@
                      <a href="rezerwacja.html" class="btn">Zarezerwuj teraz</a>
                 </div>
         </div>
-        <header>
-            <nav>
-                <img src="logo1.svg" class="logo">
-                <a href="about_us.html">O nas</a>  
-                <a href="about_us.html">Kontakt</a>
-                <a href="about_us.html">Oferta</a> 
-                <a href="about_us.html">Strona Główna</a>  
-            </nav> 
-                 <a id="login" href="about_us.html">Zaloguj się/Zarejestruj</a>         
-        </header>
+       
     </div>
+
     <div class="tlo_prostokaty">
         <p id="naglowek">Jak to dziala?</p>
     <div class="ustawienie_prostokatow">
         <div class="prostokaty">
 
             <div class="ikona-container">
-                <img src="formularz1.jpg" class="ikona">      
-            </div>
-            
+                <img src="foto/formularz1.jpg" class="ikona">      
+            </div>      
             <h4>Wypełnij formularz online</h4>
             <p>Zarezerwuj swój samochód w Panelu Rezerwacyjnym, zadzwoń, napisz maila lub skontaktuj się z nami poprzez social media –
                  zależnie, która metoda jest dla Ciebie najwygodniejsza. Złożenie rezerwacji zajmie Ci najwyżej kilka minut.</p>
@@ -44,7 +32,7 @@
         <div class="prostokaty">
 
             <div class="ikona-container">
-                <img src="zegar.png" class="ikona">
+                <img src="foto/zegar.png" class="ikona">
             </div>
             
             <h4>Poczekaj na potwierdzenie</h4>
@@ -54,7 +42,7 @@
         <div class="prostokaty"> 
 
             <div class="ikona-container">
-                <img src="ludzik.png" class="ikona">
+                <img src="foto/ludzik.png" class="ikona">
             </div>
             
             <h4>Odbierz auto i ruszaj w drogę</h4>

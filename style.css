@@ -7,7 +7,7 @@
     position: relative;
     width: 100%;
     height: 100vh; /* Tło na całą wysokość okna */
-    background-image: url('tlo_dobre.jpg'); /* Obrazek samochodów */
+    background-image: url('foto/tlo_dobre.jpg'); /* Obrazek samochodów */
     background-size: cover;            background-position: center;
     background-attachment: fixed; /* Umożliwia efekt parallax */
     background-repeat: no-repeat;
@@ -66,12 +66,13 @@ nav {
     top: 0;            /* Na górze ekranu */
     left: 0;
     width: 100%;       /* Nawigacja rozciąga się na całą szerokość */
-    background-color: black; /* Ciemne tło */
+    background-color: rgba(51, 51, 51, 0.8);
     padding: 20px 0;   /* Padding góra/dół */
     display: flex;     /* Flexbox do ustawienia linków obok siebie */
     justify-content: center; /* Wyrównanie linków do środka */
     align-items: center; /* Wyśrodkowanie w pionie */
     z-index: 1000;     /* Na wierzchu */
+   
 }
 
 nav a {
@@ -82,6 +83,7 @@ nav a {
     padding: 15px 20px; /* Padding wokół tekstu */
     margin: 0 10px; /* Odstęp pomiędzy linkami */
     transition: background-color 0.3s, color 0.3s; /* Płynna zmiana koloru i tła */
+    
 }
 #login{
     position: absolute; /* Pozycjonowanie absolutne względem strony */

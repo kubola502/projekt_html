@@ -1,0 +1,51 @@
+
+.kontakt {
+    text-align: center;
+    color: white;
+    font-size: 31px;
+    background-color:black; /* Tło z przezroczystością */
+    padding: 150px;
+    margin-bottom:42px ;
+}
+.info {
+    color : black;
+    background-color: gray;
+    opacity: 0.8;
+    width: 50%;
+    background-size: cover;
+    padding: 20x;
+    padding-bottom: 10px;
+}
+#p1 {
+    font-size: larger;
+    padding-bottom: 20px;
+}
+#p2 {
+    font-size: larger;
+    padding-bottom: 20px;
+}
+#p3 {
+    padding-top: 20px;
+}
+.kontakt2 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    height: 50vh; 
+    text-align: center;   
+}
+.paragrafy{
+    padding: 10px;
+    text-align: left;
+    font-size: larger;
+    padding-left: 31%;
+}
+.formularz { 
+    padding-bottom: 10px;  
+    padding-right: 25%;
+    margin-bottom: 10.5%;
+    
+}
+#f {
+ margin-right: 40%;
+}
