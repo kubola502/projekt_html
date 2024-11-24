@@ -1,0 +1,189 @@
+.tlo {
+    height: 85vh;  
+    width: 100%;  
+    background-image: url('tlo.webp');  
+    background-size: cover;  
+    background-position: center;  
+    display: flex;  
+    justify-content: center;
+    align-items: center; 
+    position: relative;  
+}
+.tlo img {
+    width: 100%;  
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center; 
+}
+.tekst{
+    
+    color: white;  
+    text-align: center;  
+    background-color: rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    border-radius: 10px; 
+    font-size: 24px; 
+    max-width: 80%;  
+    z-index: 1;  
+}
+.kontener {
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.58); 
+    height: 200vh; 
+    margin-top: -20px;
+}
+.info {
+    width: 500px; 
+    height: 300px; 
+    background-color:rgba(128, 128, 128, 0.897); 
+    color: white; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 2%;
+    padding: 10px;
+    position: absolute;
+    bottom: -300px;
+    left: 200px;
+}
+.info p {
+    font-family: 'Lora', serif;  
+    font-size: 18px;            
+    font-weight: normal;        
+    line-height: 1.8;            
+    color: #34495e;              
+    text-align: justify;        
+    margin: 20px ;             
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.263);
+    
+}
+
+.info h2 {
+    position: absolute;  
+    top: 40px; 
+    left: 40px;  
+    font-size: 40px;  
+    margin: 0;  
+    padding: 0; 
+    color: green;
+}
+#info_2{
+    width: 500px; 
+    height: 300px;
+    background-color:rgba(128, 128, 128, 0.897); 
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 2%;
+    padding: 10px;
+    position: absolute;
+    bottom: -300px;
+    left: 900px;
+}
+#linki {
+    position: absolute;
+    bottom: 90px;
+    left: 10px;
+    
+}
+a{
+    color : yellowgreen;
+}
+.o_nas {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 30px;
+}
+#naglowek { 
+    position : absolute;
+    right : 100px ;
+    bottom: -500px;
+}
+.kontener_2 {
+            width: 700px;
+            margin: 50px auto;
+            padding: 50px;
+            background-color:gray;
+            border-radius: 8px;
+            box-shadow: 0 0 15px gray; 
+            position : absolute;
+            top: 1000px;
+            right: 30px ;
+            text-align: justify
+}
+.checklista {
+    list-style: none;
+    padding-left: 0;
+}
+.checklista li {
+    position: relative;
+    padding-left: 25px; 
+    margin-bottom: 10px; 
+}
+
+.checklista li::before {
+    content: '✔️'; 
+    position: absolute;
+    left: 0;
+    color: #28a745; 
+    font-size: 1.2em; 
+    
+}
+.przycisk {
+    position: absolute;
+    bottom: -950px;
+    right : 150px ;
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.przycisk_cs {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    transition: background-color 0.3s;
+}
+
+.przycisk_cs:hover {
+    background-color: #218838;
+}
+.audi {
+    position: absolute;
+    bottom: -700px;
+    left: 300px;
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.audi img {
+    max-width: 100%; 
+    height: 300px;
+    width: 500px; 
+    border-radius: 8px; 
+}
+.bmw {
+    position: absolute;
+    bottom: -1050px;
+    left: 300px;
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.bmw img {
+    max-width: 100%; 
+    height: 300px;
+    width: 500px; 
+    border-radius: 8px; 
+}

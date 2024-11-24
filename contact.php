@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="pl">
+<?php include 'header.php';?>
 <head>
-        <?php include 'header.php';?>
-        <title>Kontakt</title>
-        <link rel= "stylesheet" href="style_contact.css">
-        
-</head>
-<body> 
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style_contact.css">
+</head>   
+<body>
+
         <div class="kontakt">
             <h1>Kontakt</h1>
         </div>
@@ -26,17 +24,22 @@
                         <p>00-869 Warszawa</p>
                     </div>  
             </div>
-                <div class="formularz">
-                    <h1>Skontaktuj się z nami </h1>
-                    <form>
-                        <p id="f">Twoj adres e-mail:</p>
-                        <input type="text" id="f" name="mail" placeholder="Wpisz e-mail">
-                        <p id="f">Twoj numer telefonu:</p>
-                        <input type="text" id="f" name="mail" placeholder="Wpisz nr. tel.">
-                        <p id="f">Treść wiadomości:</p>
-                        <input type="text" id="f2"  name="mail" placeholder="Napisz wiadomość">
-                    </form>
+            <div class="formularz">
+                <h1>Skontaktuj się z nami</h1>
+                <form id="contactForm">
+                    <p class="label">Twój adres e-mail:</p>
+                    <input type="text" class="input" name="email" placeholder="Wpisz e-mail">
+                    <p class="label">Twój numer telefonu:</p>
+                    <input type="text" class="input" name="phone" placeholder="Wpisz nr. tel.">
+                    <p class="label">Treść wiadomości:</p>
+                    <textarea class="input1" name="message" placeholder="Napisz wiadomość"></textarea>
+                    <button type="submit" class="Przycisk">Wyślij</button>
+                </form>
+                <div id="confirmationMessage" class="success-message" style="display: none;">
+                <p>Twoja wiadomość została wysłana!</p>   
                 </div>
+            </div>
         </div>
+        <script src="message.js"></script>
     </body> 
 </html>

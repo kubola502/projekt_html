@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,15 @@
         <a href="contact.php">Kontakt</a>
         <a href="offer.php">Oferta</a>
         <a href="index.php">Strona Główna</a>
-        <a id="login" href="login.php">Zaloguj się/Zarejestruj</a>
+
+        <?php if (isset($_SESSION['user'])): ?>
+            <!-- Jeśli użytkownik jest zalogowany -->
+            <a href="logout.php">Wyloguj się</a>
+        <?php else: ?>
+            <!-- Jeśli użytkownik nie jest zalogowany -->
+            <a href="registration.php">Zarejestruj się/Zaloguj</a>
+        <?php endif; ?>
+        
     </nav>
    
 </header>

@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-        <?php include 'header.php';?>
-        <title>Wypozyczalnia</title>
-        
+<?php include 'header.php';?>
+<head>      
+        <title>Wypozyczalnia</title>   
 </head>
 <body>
     <div class="tlo">

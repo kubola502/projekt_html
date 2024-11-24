@@ -1,0 +1,80 @@
+.pole{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+}
+
+.prostokat {
+    background-color: #fff; 
+    border-radius: 15px; 
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px; 
+    height: 500px;
+    border: 2px solid #007BFF; 
+    position: absolute;
+    top: 200px;
+    z-index: 10;
+}
+body {
+    background-color: gray;
+    font-family: Arial, sans-serif;
+}
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    margin-top: 15px; /* Dodanie marginesu dla oddzielenia etykiety */
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+
+.przycisk {
+    
+    margin-top: 20px;
+    width: 100%; 
+    padding: 5px; 
+    font-size: 16px; 
+    color: #fff; 
+    background-color: #4CAF50;  
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    
+   
+}
+
+
+
+.przycisk:hover {
+    background-color: #45a049; 
+}
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
