@@ -24,7 +24,7 @@
                     <p> Najkrótszy czas potrzebny
                     na przyspieszenie do setki
                     </p>
-                    <p id="linki"><a href="ofert.php">Przeglądaj dostępne samochody → </a></p>
+                    <p id="linki"><a href="offer.php">Przeglądaj dostępne samochody → </a></p>
             </div>
                 <div class="info" id="info_2">
                     <h2>24/7</h2>
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <div class="przycisk">
-                        <button class="przycisk_cs"><a href="ofer.php">Sprawdź nasze auta i zarezerwuj jeden z nich już teraz!</a></button>
+                        <button class="przycisk_cs"><a href="offer.php">Sprawdź nasze auta i zarezerwuj jeden z nich już teraz!</a></button>
                     </div>
                     <div class="audi">
                     <img src="foto/audi.jpg">

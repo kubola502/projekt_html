@@ -1,3 +1,10 @@
+<?php
+if (session_status() !== PHP_SESSION_ACTIVE) {
+    session_start();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -18,11 +25,13 @@
         <a href="index.php">Strona Główna</a>
 
         <?php if (isset($_SESSION['user'])): ?>
-            <!-- Jeśli użytkownik jest zalogowany -->
-            <a href="logout.php">Wyloguj się</a>
+           
+            <li>Witaj, <?php echo htmlspecialchars($_SESSION['user']); ?>!</li>
+            <li><a href="logout.php">Wyloguj się</a></li>
         <?php else: ?>
-            <!-- Jeśli użytkownik nie jest zalogowany -->
-            <a href="registration.php">Zarejestruj się/Zaloguj</a>
+            
+            <li><a href="registration.php">Zarejestruj się</a></li>
+            <li><a href="login.php">Zaloguj się</a></li>
         <?php endif; ?>
         
     </nav>
