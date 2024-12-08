@@ -17,11 +17,13 @@ body {
 .banner h1 {
     font-size: 3em;
     margin: 0;
+    
 }
 
 .banner p {
     font-size: 1.2em;
     margin: 10px 0 0;
+    
 }
 
 /* Kontener oferty */
